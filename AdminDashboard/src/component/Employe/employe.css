@@ -1,0 +1,22 @@
+:root {
+    --blue: #2a2185;
+    --white: #fff;
+    --gray: #F5F5F5;
+    --black1: #222;
+    --black: #999;
+}
+
+.containerEmploye{
+    margin: 20px 10px 10px 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.363);
+    padding: 10px 10px 20px 10px;
+}
+
+.containerEmploye h1{
+    padding: 20px 0;
+    font-size: 20px;
+    color: var(--blue);
+}
+.containerEmploye h1.title{
+    padding:14px 20px;  
+}

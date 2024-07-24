@@ -1,0 +1,130 @@
+:root {
+  --blue: #2a2185;
+  --white: #fff;
+  --gray: #f5f5f5;
+  --black1: #222;
+  --black: #999;
+}
+
+.landingPage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100vh;
+  overflow: scroll;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("../../images/11194271.webp");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.landingPage .AboutOne {
+  width: 1000px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  margin: auto;
+}
+@media screen and (max-width: 1000px){
+  .landingPage .AboutOne{
+    width: 100%;
+  }
+}
+.landingPage .formContainer {
+  border: 1px solid var(--blue);
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0;
+  margin: 0;
+  display: flex;  
+}
+@media screen and (max-width: 600px) {
+  .landingPage .AboutOne {
+    padding: 3rem;
+  }
+  .landingPage .AboutOne .formContainer {
+    flex-direction: column;
+  }
+}
+.landingPage .formContainer .imageContainer {
+  padding: 2rem;
+  display: grid;
+  opacity: 0.8;
+  border-radius: 10px 0 0 10px;
+  place-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+    url("../../images/paiiie.jpg");
+  background-position: bottom right;
+  background-size: auto;
+  background-size: var(--blue);
+  background-repeat: no-repeat;
+  color: var(--gray);
+}
+
+
+.landingPage .formContainer .imageContainer h2 {
+  color: var(--white);
+  margin: 20px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.landingPage .formContainer p {
+  color: var(--gray);
+  margin: 3px;
+  text-align: justify;
+}
+
+.AboutOne .formContainer form {
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+  }
+
+.AboutOne .formContainer form .formtitle {
+  color: var(--blue);
+  font-size: 1rem;
+  text-align: center;
+  margin: 20px 0;
+}
+.AboutOne .formContainer form .message p{
+    color: rgb(233, 233, 10);
+    border: 1px solid yellow;
+    text-align: center;
+    border-radius: 10px;
+    padding: .5rem;
+    font-size: 1.2rem;
+   
+}
+.AboutOne .formContainer form .message p.cacher{
+  display: none;
+  
+}
+.AboutOne .formContainer form .input-goup{
+    padding: 1rem 0;
+    text-align: left;
+}
+
+.AboutOne .formContainer form .input-goup label{
+    margin-left: 10px;
+}
+.AboutOne form button {
+  margin: 2px 0;
+  width: 170px;
+  color: var(--gray);
+  font-size: 1rem;
+  background: var(--blue);
+  transition: 0.2s;
+}
+.AboutOne form button:disabled{
+  background: gray; 
+}
+.AboutOne form button:hover{
+  opacity: 0.8;
+}

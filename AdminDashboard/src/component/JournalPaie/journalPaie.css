@@ -1,0 +1,165 @@
+:root {
+    --blue: #2a2185;
+    --white: #fff;
+    --gray: #F5F5F5;
+    --black1: #222;
+    --black: #999;
+}
+
+.journalPaie{
+    margin: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.363);
+}
+
+.journalPaie header{
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+}
+.journalPaie header h1{
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.journalPaie .headTableJournal{
+    margin: 7px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.journalPaie .headTableJournal select{
+    padding: 9px ;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 6px;
+    margin-left: 10px;
+    outline: none;
+}
+
+.tabJournal tbody tr:hover{
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.tabJournal {
+    border: 2px solid var(--black);
+    width: 98%;
+    margin:  auto;
+    border-collapse: collapse;
+    /* margin-bottom: 2px; */
+    border-top: 1px solid #ccc;
+}
+
+.journalPaie header{
+    display: flex;
+    justify-content: space-between;
+} 
+
+.journalPaie th{
+    text-align: left;
+    color: var(--black1);
+}
+.journalPaie tr{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: var(--black1);
+}
+.journalPaie  td .icone{
+    font-size: 22px;
+    cursor: pointer;
+}
+.journalPaie  td .icone.gap{
+    margin:0 7px;
+    color: rgba(255, 0, 0, 0.911);
+}
+
+.journalPaie  td .icone.eye, .journalPaie  td .icone.edit{
+    color: var(--blue);
+}
+
+.journalPaie .icone {
+    background-color: var(--white);
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.containerBuletin{
+    width: 130%;
+}
+
+.containerBuletin head{
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+ 
+    grid-gap: 10px;
+    margin:  13px 0;
+    align-items: center;
+    
+ 
+}
+.containerBuletin head .img{
+    display: flex;
+    grid-gap: 10px;
+}
+.buletin h1{
+    font-size: 24px;
+}
+.buletin .icone{
+    cursor: pointer;
+}
+.containerBuletin head img{
+   width: 150px;
+   border-radius: 50%;
+}
+
+.containerBuletin h3{
+    margin-left: -10px;
+    margin-bottom:7px;
+    font-size: 22px;
+    color: #222;
+}
+.containerBuletin p{
+    margin: 10px 0;
+}
+.containerBuletin thead {
+    background-color: var(--blue);
+    
+}
+.containerBuletin thead tr td{
+    color: var(--white);
+    border: 1px solid var(--blue);
+}
+.containerBuletin td{
+    padding: 10px;
+}
+.containerBuletin h4{
+    color: var(--blue);
+    padding-bottom: 10px;
+    text-align: center;
+}
+.containerBuletin{
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    /* box-shadow: 1px 6px 27px rgba(0, 0, 0, 0.1) ; */
+}
+.buletin footer{
+  
+
+    display: flex;
+    justify-content: end;
+    border-top: 1px solid #ccc;
+    width: 50%;
+    margin: auto;
+    padding-top: 3px;
+}
+.tabbuletin table{
+    width: 100%;
+}
+.tabbuletin table thead{
+    font-weight: 600px;
+}
+
+.tabbuletin tr , .tabbuletin table , .tabbuletin td {
+    border: 1px solid var(--black1);
+    border-collapse: collapse;
+}

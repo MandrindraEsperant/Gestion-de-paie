@@ -1,0 +1,181 @@
+:root {
+    --blue: #2a2185;
+    --white: #fff;
+    --gray: #F5F5F5;
+    --black1: #222;
+    --black: #999;
+}
+.searchPaie {
+    margin:4px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Paiement  td .icone{
+    font-size: 22px;
+    cursor: pointer;
+    background-color: var(--white);
+    padding: 2px;
+    border-radius: 5px;
+}
+.Paiement  td .icone.gap{
+    margin:0 7px;
+    color: rgba(255, 0, 0, 0.911);
+}
+
+.Paiement td .icone.eye, .Paiement td .icone.edit{
+    color: var(--blue);
+}
+.headPaie {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+}
+.headPaie .link_liste{
+    border: 1px solid var(--blue);
+    font-size: 1.2rem;
+    /* margin-right:50px ; */
+    color: var(--blue);
+    background: var(--white);
+    text-decoration: none;
+    padding: .6rem 2rem;
+    border-radius: 6px;
+    transition: .4s;
+}
+.headPaie .link_liste:hover{
+    color: var(--white);
+    background: var(--blue);
+}
+.headPaie div{
+    display: flex;
+    justify-content: end;
+}
+.head__form {
+    display: flex;
+    grid-gap: 5px;
+}
+
+.Paiement{
+    padding: 0 20px 20px 20px;
+    margin: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.363);
+}
+.Paiement h1.title{
+    display: flex;
+    align-items: center;
+    color:var(--blue);
+    padding: 10px 0;
+
+}
+.Paiement h1.title img , .title .icon{
+    width: 45px;
+}
+.Paiement h1 , .journal{
+    font-size: 23px;
+    color:var(--blue);
+    border-bottom: var(--black);
+}
+
+.Paiement form  label{
+    display: block;
+    color: var(--black1);
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.Paiement form select , .Paiement form input{
+   border: 1px solid var(--black);
+   font-size: 15px;
+   color: var(--black1);
+   width: 100%;
+   padding: 8px 10px;
+   border: 1px solid var(--black);
+   font-weight: 520;
+   outline: none;
+   border-radius: 6px;
+}
+
+
+
+.Paiement form .rowPaie{
+    margin: 0 10px;
+    margin-top: 15px;
+}
+
+.Paiement form h1 span{
+    display: block;
+    margin-bottom: 10px;
+}
+.Paiement form .rowPaie span{
+    padding: 10px 17px;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: 600;
+    display: block;
+    width: fit-content;
+    border: 1px solid var(--black);
+    color: #222;
+}
+
+.Paiement form .rowPaie.colomns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    justify-content: space-between;
+}
+.Paiement form .rowPaie.colomns select, .Paiement form .rowPaie.colomns input{
+    width: 100%;
+}
+
+.formPaiement{
+    margin-top: 3px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.formPaiement .image__container{
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url("../../images/paiiie.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.formPaiement .image__container p{
+    width: 50%;
+    padding:20px ;
+    color: #ccc;
+    background-color: rgba(37, 36, 36, 0.808);
+    /* background-color: rgba(37, 36, 36, 0.699); */
+    border-radius: 4px;
+    font-size: 17px;
+}
+
+.formPaiement form{
+    margin: 10px;
+}
+
+.formPaiement button{
+    display: block;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.wrappBtnPaie{
+    margin: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    grid-gap: 10px;
+}
+/* .wrappBtnPaie button{
+    background:var(--white);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+} */
